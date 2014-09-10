@@ -1,0 +1,29 @@
+<h1 class="title"><%= @article.title %></h1>
+
+<hr>
+
+<div class = 'well'>
+
+  <!--
+  <div class="row">
+
+    <div class="col-md-4 img-box">
+      <%= image_tag(@article.image_url, :class=>"img-rounded") %>
+
+    </div>
+
+    <div class="col-md-8">
+      <h1><%= @article.title %></h1>
+      <hr>
+      <h4><%= simple_format(truncate(@article.content, :length=>150))%></h4>    
+    </div>
+
+  </div>
+
+  <hr>
+   -->
+  <div class='row'>
+        <h3><%= raw(@article.content) %></h3>
+  </div>
+
+</div>

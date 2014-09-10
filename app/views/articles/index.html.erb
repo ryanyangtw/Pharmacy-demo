@@ -1,0 +1,24 @@
+<h1 class="title">健康專欄
+
+<%= link_to("新增文章", new_article_path, :class=> 'btn btn-info btn-lg btn-newarticle')%>
+</h1>
+<hr>
+
+<% @articles.each do |article|%>
+<div class="row well">
+
+  <div class="col-md-4 img-box">
+    <%= image_tag(article.image_url, :class=>"img-rounded") %>
+    <!--
+    <img src="http://placehold.it/300x300&text=No Pic" ></img>
+    -->
+  </div>
+
+  <div class="col-md-8">
+    <h1><%= article.title %></h1>
+    <hr>
+    <h4><%= simple_format(truncate(article.content, :length=>150))%></h4>    
+  </div>
+
+</div>
+<%end%>
