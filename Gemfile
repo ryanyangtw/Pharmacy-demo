@@ -37,14 +37,14 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
+#gem 'nokogiri', '~> 1.6.3.1'
 gem 'simple_form', '~> 3.0.2'
 gem 'bootstrap-sass', '~> 3.2.0.0'
 gem 'carrierwave'
 gem 'mini_magick', '~> 3.7.0'
 gem 'ckeditor'
 gem 'heroku'
-gem "fog"
+gem 'fog'
 
 group :development, :test do
   #gem 'pry', '~> 0.10.0'

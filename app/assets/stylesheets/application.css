@@ -28,3 +28,7 @@ h1.title{
   display:inline-block;
   font-size: 46px;
 }
+
+a .title-box h1{
+  color: #0C2F4D;
+}

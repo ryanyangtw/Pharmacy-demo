@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
 
   def index
     #binding.pry
-    @articles = Article.all.order("id ASC")
+    @articles = Article.order("id ASC")
   end
 
   def show
@@ -29,6 +29,10 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
+    if(@article.destroy)
+      redirect_to admin_articles_path
+    else
+    end
   end
 
   private
@@ -37,6 +41,6 @@ class ArticlesController < ApplicationController
   end
 
   def article_params
-    params.require(:article).permit(:title ,:content,:image)
+    params.require(:article).permit(:title ,:content,:image, :description)
   end
 end
