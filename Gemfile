@@ -45,7 +45,7 @@ gem 'mini_magick', '~> 3.7.0'
 gem 'ckeditor'
 gem 'heroku'
 gem 'fog'
-gem 'aws'
+
 
 group :development, :test do
   #gem 'pry', '~> 0.10.0'
